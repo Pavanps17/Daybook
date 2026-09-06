@@ -1,0 +1,56 @@
+:root {
+  --paper: #f3eadc;
+  --paper-deep: #e8dcc8;
+  --sheet: #fbf6ee;
+  --ink: #2a2218;
+  --muted: #6e6458;
+  --rule: #ddd2c1;
+  --clay: #b5522a;
+  --clay-soft: #f3e0d4;
+  --moss: #3f5c3e;
+  --moss-soft: #dce6d6;
+  --ochre: #a67c2a;
+  --ochre-soft: #f0e6c8;
+  --danger: #8c2f2f;
+  --shadow: 0 18px 40px -28px rgba(42, 34, 24, 0.45);
+  --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 12% -10%, #f8f1e4 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 8%, #ead9c2 0%, transparent 50%),
+    var(--paper);
+  background-attachment: fixed;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100svh;
+}
